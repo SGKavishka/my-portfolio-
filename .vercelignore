@@ -1,0 +1,8 @@
+.DS_Store
+.git/
+.vercel/
+node_modules/
+*.log
+
+LEC slides/
+Gayan_Kavishka_CV.docx

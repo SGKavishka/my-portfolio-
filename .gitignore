@@ -1,5 +1,6 @@
 .DS_Store
 *.log
+.vercel/
 
 # Local coursework/source materials not required to serve the portfolio site.
 LEC slides/
