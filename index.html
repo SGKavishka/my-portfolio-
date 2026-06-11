@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Skills Portfolio | Gayan Kavishka</title>
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("portfolio-theme");
+          if (savedTheme === "light") {
+            document.documentElement.dataset.theme = "light";
+          }
+        } catch (error) {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="is-loading">
+    <div class="page-loader" aria-hidden="true">
+      <div class="page-loader-inner">
+        <div class="page-loader-ring"></div>
+        <p>Loading portfolio</p>
+      </div>
+    </div>
+    <canvas class="fluid-canvas" id="fluid-canvas" aria-hidden="true"></canvas>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/gayan-profile.jpg" alt="" />
+        </span>
+        <span>Gayan Kavishka</span>
+      </a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#cv">CV</a>
+          <a href="#lectures">Lectures</a>
+          <a href="#community-project">Project</a>
+          <a href="#reflection">Reflection</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <label class="theme-switch" for="theme-toggle">
+          <span>Dark</span>
+          <input class="theme-checkbox" id="theme-toggle" type="checkbox" aria-label="Switch between dark and light mode" />
+          <span class="theme-track" aria-hidden="true">
+            <span class="theme-thumb"></span>
+          </span>
+          <span>Light</span>
+        </label>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <img
+          src="assets/professional-skills-hero.png"
+          alt="Professional desk setup with study notes and portfolio materials"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Professional Skills Module</p>
+          <h1 id="page-title">Professional Skills Portfolio</h1>
+          <p>
+            A web-based portfolio presenting my CV first, followed by lecture
+            core concepts and personal reflections from the module.
+          </p>
+          <div class="hero-actions" aria-label="Portfolio shortcuts">
+            <a class="primary-action" href="#cv">View CV</a>
+            <a class="secondary-action" href="#lectures">Browse Lectures</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="cv" class="section cv-section" aria-labelledby="cv-title">
+        <div class="section-heading">
+          <p class="eyebrow">Curriculum Vitae</p>
+          <h2 id="cv-title">Gayan Kavishka Senarathna</h2>
+          <p>Software Engineering Student</p>
+        </div>
+
+        <div class="cv-main">
+            <article class="cv-block">
+              <h3>Profile</h3>
+              <p>
+                Motivated Software Engineering student with practical experience in
+                developing both web and desktop applications. Proficient across
+                the full stack, from frontend design to database management, with
+                a strong passion for creating user-focused, practical software
+                solutions. Excellent communicator, quick learner, and
+                collaborative team player.
+              </p>
+            </article>
+
+            <article class="cv-block">
+              <h3>Technical Skills</h3>
+              <ul class="skill-list">
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>HTML &amp; CSS</li>
+                <li>Java Swing</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Git &amp; GitHub</li>
+                <li>Object-Oriented Programming (OOP)</li>
+                <li>CRUD Operations</li>
+                <li>Responsive Web Design</li>
+              </ul>
+            </article>
+
+            <article class="cv-block">
+              <h3>Projects</h3>
+              <div class="project-list">
+                <section>
+                  <h4>TechGear</h4>
+                  <ul>
+                    <li>Developed a responsive web application for browsing and managing technology products.</li>
+                    <li>Built user-friendly frontend pages with integrated database features.</li>
+                    <li>Improved site navigation, layout, and overall design quality.</li>
+                  </ul>
+                </section>
+                <section>
+                  <h4>TeachMe</h4>
+                  <ul>
+                    <li>Built an online learning platform with interactive frontend features.</li>
+                    <li>Handled full frontend-backend integration for a seamless user experience.</li>
+                  </ul>
+                </section>
+                <section>
+                  <h4>ProxJavaSwingApp</h4>
+                  <ul>
+                    <li>Developed a Java Swing desktop application applying OOP concepts and CRUD operations.</li>
+                    <li>Designed intuitive GUI components for end-user interaction.</li>
+                  </ul>
+                </section>
+                <section>
+                  <h4>Library Management System</h4>
+                  <ul>
+                    <li>Created a system to manage books, users, and borrowing records with full database support.</li>
+                  </ul>
+                </section>
+                <section>
+                  <h4>Tourism Web Application</h4>
+                  <ul>
+                    <li>Designed and built responsive pages for a tourism platform in a collaborative team setting.</li>
+                  </ul>
+                </section>
+              </div>
+            </article>
+
+            <div class="cv-two-column">
+              <article class="cv-block">
+                <h3>Education</h3>
+                <ul class="education-list">
+                  <li>
+                    <strong>SLIIT CITY UNI</strong>
+                    <span>Undergraduate in BSc (Hons) Computer Science</span>
+                  </li>
+                  <li>
+                    <strong>MO/BANDARANAYAKA NATANAIL COLLAGE</strong>
+                    <span>Successfully Completed O/L and A/L</span>
+                  </li>
+                  <li>
+                    <strong>ESOFT METRO CAMPUS</strong>
+                    <span>Basic Certification to Globally Recognized Cambridge Qualification</span>
+                  </li>
+                </ul>
+              </article>
+
+              <article class="cv-block">
+                <h3>Languages &amp; Additional</h3>
+                <p>Languages - English, Sinhala</p>
+                <ul>
+                  <li>Passionate about full stack software development.</li>
+                  <li>Active open-source contributor on GitHub with multiple projects.</li>
+                  <li>Quick learner with strong teamwork and communication skills.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+      </section>
+
+      <section id="lectures" class="section lectures-section" aria-labelledby="lectures-title">
+        <div class="section-heading">
+          <p class="eyebrow">Module Learning</p>
+          <h2 id="lectures-title">Lecture Core Concepts and Reflections</h2>
+          <p>
+            These entries summarize the core concepts from each lecture and add my
+            learning reflection. The original lecture files remain unchanged.
+          </p>
+        </div>
+
+        <div class="filter-bar" aria-label="Filter lectures">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-button" type="button" data-filter="self" aria-pressed="false">Self Development</button>
+          <button class="filter-button" type="button" data-filter="career" aria-pressed="false">Career Readiness</button>
+          <button class="filter-button" type="button" data-filter="communication" aria-pressed="false">Communication</button>
+          <button class="filter-button" type="button" data-filter="etiquette" aria-pressed="false">Etiquette</button>
+          <button class="filter-button" type="button" data-filter="ethics" aria-pressed="false">Ethics</button>
+        </div>
+
+        <div class="lecture-grid">
+          <article class="lecture-card" data-category="self">
+            <div class="lecture-meta">Lecture 01</div>
+            <h3>Introduction to Professional Skills</h3>
+            <h4>Core Concepts</h4>
+            <ul>
+              <li>Values, beliefs, attitudes, and character shape professional behavior.</li>
+              <li>Employability skills include communication, teamwork, problem solving, adaptability, time management, and leadership.</li>
+              <li>Professional skills are transferable abilities that support workplace success and career advancement.</li>
+              <li>The Johari Window supports awareness of strengths, blind spots, and feedback.</li>
+              <li>Technical, soft, and transferable skills work together to create a complete professional profile.</li>
+              <li>Continuous learning, practice, feedback, and accepting challenges are key ways to improve professional skills.</li>
+              <li>Professional identity is built through consistent actions, not only through qualifications or certificates.</li>
+              <li>Reflection helps turn experience into improvement by making strengths and weaknesses visible.</li>
+            </ul>
+            <h4>Practical Learning</h4>
+            <p>
+              I can use this lecture as a checklist for my own growth: identify
+              the skills I already have, notice the skills that need practice,
+              and ask for feedback from lecturers, classmates, and project team
+              members.
+            </p>
+            <h4>Additional Notes</h4>
+            <p>
+              A professional profile is built through consistent behavior, so
+              punctuality, ownership of tasks, and a willingness to improve from
+              feedback matter just as much as technical ability.
+            </p>
+            <h4>Worksheet Practice</h4>
+            <ul>
+              <li>List three professional skills you already use well and three that still need practice.</li>
+              <li>Use the Johari Window idea to identify one blind spot and one strength you can share with your team.</li>
+            </ul>
+            <h4>My Reflection</h4>
+            <p>
+              This lecture helped me understand that technical knowledge alone is
+              not enough for employability. I need to keep developing my attitude,
+              values, communication, and teamwork because these qualities decide
+              how effectively I work with others.
+            </p>
+            <p>
+              It also made me think about character as a long-term habit. Being
+              responsible, respectful, and honest in small academic tasks can
+              prepare me for the expectations of a professional workplace.
+            </p>
+            <p>
+              This means I should treat everyday classwork, deadlines, and team
+              contributions as part of my professional image. The way I handle
+              small responsibilities now will shape how others trust me later.
+            </p>
+            <p>
+              If I want to become more professional, I need to keep adjusting my
+              habits over time instead of only focusing on the final result.
+            </p>
+            <p class="source-note">Source materials: Lesson1.pptx, Professional Skills.pdf, worksheets.</p>
+          </article>
+
+          <article class="lecture-card" data-category="self">
+            <div class="lecture-meta">Lecture 02</div>
+            <h3>Emotional Intelligence</h3>
+            <h4>Core Concepts</h4>
+            <ul>
+              <li>Emotional intelligence is the ability to perceive, understand, use, and manage emotions.</li>
+              <li>EI supports relationships, work performance, stress management, and leadership development.</li>
+              <li>Key EI domains include self-awareness, self-regulation, motivation, empathy, and social skills.</li>
+              <li>IQ and EQ work together, but EQ is especially important when dealing with conflict, change, and pressure.</li>
+              <li>Emotions can be shown through voice, breathing, facial expression, muscle tone, energy level, and movement.</li>
+              <li>Self-regulation can be improved through mindfulness, cognitive re-appraisal, acceptance, and problem solving.</li>
+              <li>Active listening helps reduce emotional tension because it shows the speaker that their point is being understood.</li>
+              <li>Empathy helps people respond to each other with patience instead of assuming the worst in a stressful moment.</li>
+            </ul>
+            <h4>Practical Learning</h4>
+            <p>
+              In presentations and group assignments, I can pause before reacting,
+              reframe negative thoughts, and listen for the emotion behind what
+              another person is saying.
+            </p>
+            <h4>Additional Notes</h4>
+            <p>
+              In day-to-day teamwork, emotional intelligence shows up when I stay
+              calm during disagreement, keep my tone respectful, and avoid taking
+              feedback personally.
+            </p>
+            <h4>Worksheet Practice</h4>
+            <ul>
+              <li>Describe a situation where you felt stressed and write one way to respond more calmly next time.</li>
+              <li>Match one emotion with a practical response that would help a group discussion stay productive.</li>
+            </ul>
+            <h4>My Reflection</h4>
+            <p>
+              I learned that emotional control is a practical professional skill.
+              In group work and presentations, I can perform better by recognizing
+              my emotions, listening to others, responding calmly, and showing
+              empathy when there is pressure or disagreement.
+            </p>
+            <p>
+              This lecture is especially relevant to software project work because
+              deadlines and bugs can create stress. Emotional intelligence helps
+              me stay constructive instead of blaming others or avoiding the
+              problem.
+            </p>
+            <p>
+              It also reminded me that feedback is easier to accept when I do not
+              react defensively. If I manage my emotions well, I can turn even
+              criticism into useful guidance for improvement.
+            </p>
+            <p>
+              This is useful in teamwork because a calm response can stop a small
+              problem from becoming a larger conflict and keeps the group focused
+              on the task.
+            </p>
+            <p class="source-note">Source material: Emotional Intelligence (1).pptx.</p>
+          </article>
+
+          <article class="lecture-card" data-category="career">
+            <div class="lecture-meta">Lecture 03</div>
+            <h3>Portfolio Management</h3>
+            <h4>Core Concepts</h4>
+            <ul>
+              <li>Portfolios can be personal, career/dossier, employment, or assessment focused.</li>
+              <li>A strong portfolio has a clear purpose, defined audience, organized materials, and professional presentation.</li>
+              <li>Evidence can include a CV, projects, certificates, work samples, references, and reflective statements.</li>
+              <li>Digital tools such as LinkedIn, Google Sites, WordPress, Wix, Behance, and GitHub Pages can host portfolio work.</li>
+              <li>Portfolio content should be organized with clear sections such as introduction, CV, education, projects, skills, and reflections.</li>
+              <li>Each artifact should include context explaining why it is included and what was learned from it.</li>
+              <li>Regular updates keep the portfolio relevant and show steady professional growth over time.</li>
+              <li>Strong portfolios balance evidence, explanation, and presentation so the viewer can understand the story quickly.</li>
+            </ul>
+            <h4>Practical Learning</h4>
+            <p>
+              A portfolio should be updated continuously, not only at assignment
+              deadlines. I can add new projects, screenshots, certificates, and
+              reflections whenever I complete meaningful work.
+            </p>
+            <h4>Additional Notes</h4>
+            <p>
+              A strong portfolio should show context as well as output, so each
+              item should explain the challenge, the tools used, and the result.
+            </p>
+            <h4>Worksheet Practice</h4>
+            <ul>
+              <li>Choose one project and write a short evidence note explaining why it belongs in your portfolio.</li>
+              <li>Plan one portfolio update you can add after your next assignment or project milestone.</li>
+            </ul>
+            <h4>My Reflection</h4>
+            <p>
+              This lecture changed how I see a portfolio. It is not only a place
+              to display finished work; it is evidence of learning, progress, and
+              self-assessment. I should update this portfolio regularly as my
+              projects and professional skills improve.
+            </p>
+            <p>
+              For my career as a software engineering student, this website can
+              become proof of both technical ability and personal development if
+              I keep it organized, current, and focused on evidence.
+            </p>
+            <p>
+              I also learned that a portfolio is strongest when it tells a story.
+              Instead of only listing achievements, I should connect each item to
+              a clear skill, outcome, or learning experience.
+            </p>
+            <p>
+              That story becomes stronger when I include dates, responsibilities,
+              and tools, because those details show the progression behind the
+              finished work.
+            </p>
+            <p class="source-note">Source materials: Portfolio management.pptx, portfolio context document.</p>
+          </article>
+
+          <article class="lecture-card" data-category="career">
+            <div class="lecture-meta">Lecture 04</div>
+            <h3>CV and Cover Letter Writing</h3>
+            <h4>Core Concepts</h4>
+            <ul>
+              <li>A CV summarizes education, work experience, skills, achievements, and suitability for a role.</li>
+              <li>Effective CVs use clear formatting, headings, bullet points, white space, and consistent structure.</li>
+              <li>Key CV sections include personal information, professional summary, work experience, education, skills, and achievements.</li>
+              <li>Tailoring a CV requires researching the company, reading the job description, and highlighting relevant qualifications.</li>
+              <li>A professional summary should clearly show career goals, key skills, and value offered to the employer.</li>
+              <li>Common mistakes include spelling errors, irrelevant information, poor formatting consistency, and overly long descriptions.</li>
+              <li>Cover letters work best when they explain motivation, fit, and a few relevant achievements rather than repeating the CV word for word.</li>
+              <li>Proofreading matters because small errors can weaken a strong application even when the content is solid.</li>
+            </ul>
+            <h4>Practical Learning</h4>
+            <p>
+              Before applying for a role, I should compare my CV with the job
+              description, highlight relevant projects, use action verbs, and
+              make sure the document is easy to scan.
+            </p>
+            <h4>Additional Notes</h4>
+            <p>
+              A cover letter should not repeat the CV. It should connect one or
+              two achievements directly to the job and explain why I want the
+              role.
+            </p>
+            <h4>Worksheet Practice</h4>
+            <ul>
+              <li>Rewrite one CV bullet using a stronger action verb and a measurable result.</li>
+              <li>Draft one short cover letter paragraph that explains why you fit a specific role.</li>
+            </ul>
+            <h4>My Reflection</h4>
+            <p>
+              The CV lecture helped me improve how I present my software projects
+              and technical skills. I learned to keep the CV clear, honest, and
+              targeted so recruiters can quickly understand my strengths and
+              suitability for a specific opportunity.
+            </p>
+            <p>
+              I also learned that a CV creates the first impression before an
+              interview. Because of that, every section should support my purpose
+              and avoid unnecessary details that distract from my strengths.
+            </p>
+            <p>
+              A strong CV is not just a summary of what I have done; it is a
+              targeted document that proves why I am suitable for a specific
+              opportunity.
+            </p>
+            <p>
+              I also learned that editing is part of writing. Removing weak or
+              irrelevant details can improve the overall clarity of the document.
+            </p>
+            <p class="source-note">Source materials: CV writing.pptx, CV and Cover letter writing.docx.</p>
+          </article>
+
+          <article class="lecture-card" data-category="career communication">
+            <div class="lecture-meta">Lecture 05</div>
+            <h3>Job Hunting and Interview Skills</h3>
+            <h4>Core Concepts</h4>
+            <ul>
+              <li>Job interviews are conversations where both employer and candidate gather information and evidence.</li>
+              <li>Preparation includes knowing the job, researching the company, identifying strengths, and preparing questions.</li>
+              <li>Verbal and non-verbal communication influence the impression created during an interview.</li>
+              <li>Active listening, the 6 Cs of effective communication, and the STAR method help structure strong answers.</li>
+              <li>Successful candidates are specific, use company knowledge, maintain eye contact, ask questions, and support claims with examples.</li>
+              <li>Mock interview evaluation covers dress, posture, eye contact, calmness, clear speech, enthusiasm, and relevant questions.</li>
+              <li>Follow-up messages after the interview can reinforce interest and show professionalism.</li>
+              <li>Interview success also depends on showing readiness to learn in the new role.</li>
+            </ul>
+            <h4>Practical Learning</h4>
+            <p>
+              I can prepare interview answers by selecting real examples from my
+              projects, then structuring them with Situation, Target, Action, and
+              Result so my answers stay brief and complete.
+            </p>
+            <h4>Additional Notes</h4>
+            <p>
+              If possible, I should include results in my answers, such as
+              improved speed, a solved problem, or a better outcome for the team,
+              because concrete results are easier to trust.
+            </p>
+            <h4>Worksheet Practice</h4>
+            <ul>
+              <li>Prepare one STAR answer for a teamwork example and one for a problem-solving example.</li>
+              <li>Write two questions you would ask an interviewer about the team, tools, or growth opportunities.</li>
+            </ul>
+            <h4>My Reflection</h4>
+            <p>
+              I learned that interview confidence comes from preparation rather
+              than memorizing answers. I can use the STAR structure to explain my
+              project experience clearly and support my answers with specific
+              examples from my software development work.
+            </p>
+            <p>
+              The lecture also showed me that the interview is two-way. I should
+              prepare questions about the role, team, and organization so I can
+              decide whether the opportunity matches my goals.
+            </p>
+            <p>
+              I learned that an interview is not about sounding perfect. It is
+              about showing preparation, honesty, and the ability to communicate
+              real experience in a structured way.
+            </p>
+            <p>
+              Rehearsing out loud can also help me notice filler words and refine
+              how clearly I explain my experience under pressure.
+            </p>
+            <p class="source-note">Source materials: Job Hunting (1).pptx, Job Interviews-1.pptx, interview skills document.</p>
+          </article>
+
+          <article class="lecture-card" data-category="communication">
+            <div class="lecture-meta">Lecture 06</div>
+            <h3>Email and Telephone Etiquette</h3>
+            <h4>Core Concepts</h4>
+            <ul>
+              <li>Telephone etiquette requires clear greetings, polite tone, careful hold/transfer handling, accurate messages, and professional closing.</li>
+              <li>Callers should not hear side conversations, office discussions, eating, chewing, or careless language.</li>
+              <li>Formal emails need a clear subject, appropriate greeting, organized body, polite closing, and full name.</li>
+              <li>Professional email communication avoids contractions, slang, full capital words, unnecessary exclamation marks, and informal signatures.</li>
+              <li>Messages should include complete details such as caller name, contact number, date, time, message, and required action.</li>
+              <li>Email writing practice includes thank-you messages, follow-ups, formal business updates, apologies, feedback, and condolences.</li>
+              <li>Timely replies matter because delayed responses can create confusion or make the sender feel ignored.</li>
+              <li>Clear subject lines help the receiver understand priority before opening the message.</li>
+            </ul>
+            <h4>Practical Learning</h4>
+            <p>
+              I should plan the purpose of an email or phone call before I start,
+              use polite wording, and make the next action clear so the receiver
+              does not need to guess what I mean.
+            </p>
+            <h4>Additional Notes</h4>
+            <p>
+              Small habits such as confirming names, repeating important details,
+              and ending with a clear action point can prevent mistakes and save
+              time for everyone involved.
+            </p>
+            <h4>Worksheet Practice</h4>
+            <ul>
+              <li>Write a formal email subject and opening line for a lecturer request.</li>
+              <li>Practice a short phone message that includes the caller name, number, time, and action needed.</li>
+            </ul>
+            <h4>My Reflection</h4>
+            <p>
+              This lecture made me more aware that small communication habits
+              affect professional trust. I should write emails with a clear
+              purpose and speak on calls with patience, accuracy, and respect,
+              especially when representing a team or organization.
+            </p>
+            <p>
+              As a student, this is useful when contacting lecturers, teammates,
+              clients, or internship recruiters. Professional communication can
+              show reliability even before any technical work is reviewed.
+            </p>
+            <p>
+              I also learned that communication etiquette is about respect and
+              accuracy at the same time. A polite message still needs clear
+              details so the receiver can act without needing a second follow-up.
+            </p>
+            <p>
+              That matters because communication is often judged by how easy it
+              is for the other person to respond, not only by how polite it
+              sounds.
+            </p>
+            <p class="source-note">Source materials: Telephone-Etiquette.pdf, email-etiquette.pdf, email_use.pdf, Email Writing Worksheet.docx.</p>
+          </article>
+
+          <article class="lecture-card" data-category="etiquette">
+            <div class="lecture-meta">Lecture 07</div>
+            <h3>Dining Etiquette and Table Manners</h3>
+            <h4>Core Concepts</h4>
+            <ul>
+              <li>Dining etiquette is about making others comfortable, not acting perfect.</li>
+              <li>Core habits include phone-free tables, napkin use, chewing before speaking, pacing with others, and respectful conversation.</li>
+              <li>Formal dining includes table-setting awareness, utensil order, host cues, posture, seating protocol, and multi-course pacing.</li>
+              <li>Cultural dining differences require respect, observation, and adaptability.</li>
+              <li>Dining conversation should focus on appropriate topics such as shared interests, travel, books, projects, and local events.</li>
+              <li>Modern etiquette includes digital payment awareness, QR menu use, food waste awareness, and handling online reviews respectfully.</li>
+              <li>Good table manners also help build trust during networking meals and formal events.</li>
+              <li>Observing the host and the pace of others is important because it helps you follow the flow of the meal without creating attention.</li>
+            </ul>
+            <h4>Practical Learning</h4>
+            <p>
+              I can apply this by being present during meals, keeping my phone
+              away, waiting for the host or others before starting, and choosing
+              polite conversation topics.
+            </p>
+            <h4>Additional Notes</h4>
+            <p>
+              Dining events can also be networking opportunities, so calm timing,
+              neat table habits, and awareness of the group help create a better
+              impression.
+            </p>
+            <h4>Worksheet Practice</h4>
+            <ul>
+              <li>List three table manners that help keep a meal comfortable for everyone.</li>
+              <li>Write one example of a safe conversation topic and one topic to avoid at a formal meal.</li>
+            </ul>
+            <h4>My Reflection</h4>
+            <p>
+              I learned that dining etiquette is useful in business meals,
+              networking events, and professional social situations. Being
+              present, polite, and aware of others can help me make a better
+              impression outside technical environments too.
+            </p>
+            <p>
+              The key lesson for me is that etiquette reduces discomfort. If I
+              understand basic table manners, I can focus on building relationships
+              instead of worrying about what to do next.
+            </p>
+            <p>
+              This matters because a meal can become part of a professional
+              conversation. When I behave appropriately, I can focus on the
+              interaction itself rather than on avoiding mistakes.
+            </p>
+            <p>
+              I also learned that table manners are a form of social awareness.
+              They show that I can respect shared space, read timing, and keep
+              the setting comfortable for everyone involved.
+            </p>
+            <p class="source-note">Source material: dining-etiquettes.pptx.</p>
+          </article>
+
+          <article class="lecture-card" data-category="etiquette">
+            <div class="lecture-meta">Lecture 08</div>
+            <h3>Grooming and Etiquette</h3>
+            <h4>Core Concepts</h4>
+            <ul>
+              <li>Grooming means maintaining a clean, neat, appropriate, and well-presented appearance.</li>
+              <li>Etiquette means socially appropriate behavior, including greetings, listening, phone use, group behavior, and respect for personal space.</li>
+              <li>First impressions are formed through appearance, posture, tone of voice, punctuality, greeting style, and confidence.</li>
+              <li>Professional behavior includes respecting diversity, personal boundaries, digital boundaries, and inclusive communication.</li>
+              <li>Personal branding is the repeated impression created through habits, communication, behavior, digital presence, and consistency.</li>
+              <li>Daily grooming includes body hygiene, hand hygiene, oral care, hair care, neat clothing, clean shoes, and moderate fragrance.</li>
+              <li>Consistency between online presence and in-person conduct strengthens a professional image.</li>
+              <li>Small details such as posture, facial expression, and the way you carry documents also shape how professionally you are perceived.</li>
+            </ul>
+            <h4>Practical Learning</h4>
+            <p>
+              Before interviews, presentations, or networking events, I should
+              prepare my outfit, check grooming details, arrange documents, and
+              arrive early enough to enter calmly.
+            </p>
+            <h4>Additional Notes</h4>
+            <p>
+              Grooming also includes digital presence. Profile photos, usernames,
+              and short bios can influence first impressions before I even speak.
+            </p>
+            <h4>Worksheet Practice</h4>
+            <ul>
+              <li>Check your digital profile and note one improvement that would make it more professional.</li>
+              <li>Write a short grooming checklist for an interview or presentation day.</li>
+            </ul>
+            <h4>My Reflection</h4>
+            <p>
+              This lecture reminded me that professionalism starts before I speak.
+              Clean presentation, punctuality, respectful greetings, and careful
+              listening can support my personal brand and help others feel
+              comfortable working with me.
+            </p>
+            <p>
+              I also learned that etiquette is connected to respect. Respecting
+              names, accents, cultures, personal space, and digital boundaries is
+              part of being ready for a diverse workplace.
+            </p>
+            <p>
+              This lecture helped me see that grooming is not only about looking
+              presentable. It also affects how confidently and respectfully I
+              enter a space and how professionally I am remembered afterward.
+            </p>
+            <p>
+              Another useful idea is that grooming supports discipline. When I
+              prepare myself properly, I am also preparing my mindset to act
+              carefully and responsibly in that environment.
+            </p>
+            <p class="source-note">Source material: Grooming and Etiquette .pptx.</p>
+          </article>
+
+          <article class="lecture-card" data-category="communication career">
+            <div class="lecture-meta">Lecture 09</div>
+            <h3>Negotiation Skills</h3>
+            <h4>Core Concepts</h4>
+            <ul>
+              <li>Negotiation is a structured process for reaching a mutually acceptable agreement.</li>
+              <li>Key principles include people before problems, trust and verify, focus on interests, invest in options, and co-own the process.</li>
+              <li>Preparation includes building relationships, setting goals, knowing BATNA, strategizing, and being ready to improvise.</li>
+              <li>Effective negotiation uses active listening, questioning, rapport, strategic empathy, and win-win thinking.</li>
+              <li>BATNA is the best alternative to a negotiated agreement and acts as a strategic anchor during negotiation.</li>
+              <li>Common mistakes include lack of preparation, ignoring BATNA, emotional reactions, cognitive biases, and poor communication.</li>
+              <li>Objective criteria and compromise help turn disagreement into practical agreement.</li>
+              <li>Good negotiators also know when to pause, reframe the issue, and return with clearer information instead of forcing a rushed decision.</li>
+            </ul>
+            <h4>Practical Learning</h4>
+            <p>
+              Before any negotiation, I should list my alternatives, decide my
+              walk-away point, understand the other party's interests, and prepare
+              options that can create value for both sides.
+            </p>
+            <h4>Additional Notes</h4>
+            <p>
+              A good negotiation keeps the focus on the problem, not the person,
+              and uses objective criteria so both sides can justify the final
+              outcome.
+            </p>
+            <h4>Worksheet Practice</h4>
+            <ul>
+              <li>List your BATNA for one project or academic negotiation.</li>
+              <li>Write one win-win option that could satisfy both sides of a disagreement.</li>
+            </ul>
+            <h4>My Reflection</h4>
+            <p>
+              I learned that negotiation is not just arguing for my side. It is a
+              prepared conversation where I should understand interests, know my
+              alternatives, listen actively, and look for outcomes that protect
+              both objectives and relationships.
+            </p>
+            <p>
+              This can help me in project teams when dividing tasks, managing
+              deadlines, or discussing design decisions. A good negotiation should
+              solve the problem without damaging the working relationship.
+            </p>
+            <p>
+              The lecture also showed me that negotiation is useful even in small
+              academic settings, because it teaches me how to explain my point
+              clearly while still listening to other views.
+            </p>
+            <p>
+              I think this is important because negotiation is not only about
+              getting a result. It is also about controlling tone, timing, and
+              trust so the agreement can last after the conversation ends.
+            </p>
+            <p class="source-note">Source material: Negotiation Skills.pdf.</p>
+          </article>
+
+          <article class="lecture-card" data-category="ethics">
+            <div class="lecture-meta">Lecture 10</div>
+            <h3>Business Ethics in Practice</h3>
+            <h4>Core Concepts</h4>
+            <ul>
+              <li>Professionals have a duty to uphold high standards of conduct, integrity, and public interest.</li>
+              <li>Fundamental principles include integrity, objectivity, professional competence and due care, confidentiality, and professional behavior.</li>
+              <li>Ethical threats include self-interest, self-review, advocacy, familiarity, and intimidation threats.</li>
+              <li>Professional judgment uses facts, consultation, bias awareness, the reasonable informed third party test, and safeguards.</li>
+              <li>Safeguards include internal controls, reporting channels, documentation, escalation, and whistleblowing when needed.</li>
+              <li>Ethical dilemmas often involve pressure, ambiguity, conflicting responsibilities, and no simple right-or-wrong answer.</li>
+              <li>Transparency and accountability help preserve trust when professionals make difficult decisions.</li>
+              <li>Ethical practice also requires reviewing consequences, because a decision that feels convenient in the moment can still create long-term harm.</li>
+            </ul>
+            <h4>Practical Learning</h4>
+            <p>
+              In software work, I should protect user data, document important
+              decisions, avoid misleading claims, and ask for guidance when a
+              situation creates a conflict of interest or pressure to act wrongly.
+            </p>
+            <h4>Additional Notes</h4>
+            <p>
+              Ethics is practical in everyday software work because privacy,
+              honesty, and accountability are part of normal decisions, not just
+              special crisis situations.
+            </p>
+            <h4>Worksheet Practice</h4>
+            <ul>
+              <li>Describe one ethical threat that could affect a software project and one safeguard to reduce it.</li>
+              <li>Write one short example of how confidentiality should be protected in a student project.</li>
+            </ul>
+            <h4>My Reflection</h4>
+            <p>
+              This lecture showed me that ethical decisions affect trust and
+              reputation. In future work, especially when handling data or
+              decisions that affect others, I should avoid conflicts of interest,
+              protect confidential information, and use proper reporting channels
+              when something is wrong.
+            </p>
+            <p>
+              I also understood that ethics is not only about avoiding punishment.
+              It is about protecting people, organizations, and the profession by
+              making decisions that can be justified to a reasonable informed
+              third party.
+            </p>
+            <p>
+              This lecture made it clear that ethical behavior is part of
+              professional competence. If I act honestly and document decisions
+              properly, I protect both users and my own credibility.
+            </p>
+            <p>
+              I also learned that ethics should not be treated as a separate
+              topic from technical work. The way I build, communicate, and
+              report work is part of the quality of the work itself.
+            </p>
+            <p class="source-note">Source materials: Workshop - Business Ethics in Practice.pptx, Code of Ethics.pdf, Ethics Checklist_Final.pdf.</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="lecture-modal" id="lecture-modal" hidden>
+        <div class="modal-backdrop" data-modal-close></div>
+        <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="lecture-modal-title" tabindex="-1">
+          <button class="modal-close" type="button" data-modal-close aria-label="Close lecture popup">Close</button>
+          <div class="lecture-modal-content" id="lecture-modal-content"></div>
+        </section>
+      </div>
+
+      <section id="community-project" class="section community-section" aria-labelledby="community-title">
+        <div class="section-heading">
+          <p class="eyebrow">Group Project</p>
+          <h2 id="community-title">Community Project Completion Report - Group 13</h2>
+          <p>
+            A separate portfolio section for our Professional Skills community
+            project, based on the completed report for Tech-Fusion 2026.
+          </p>
+        </div>
+
+        <div class="project-overview">
+          <article class="project-panel project-main-card">
+            <p class="project-label">Project Overview</p>
+            <h3>Tech-Fusion 2026 IT Workshop</h3>
+            <p>
+              Our group conducted an educational one-day IT workshop at WP/NG
+              Dharmashoka Maha Vidyalaya on April 7, 2026. The workshop focused
+              on practical learning in web development, cybersecurity basics, and
+              algorithmic logic.
+            </p>
+            <p>
+              Because the school had limited IT infrastructure, the team created
+              a mobile lab by bringing 12 personal laptops and supporting 25
+              students through guided hands-on activities.
+            </p>
+            <div class="project-actions">
+              <a class="primary-action" href="COMMUNITY%20PROJECT%20COMPLETION%20REPORT-%20Group%2013.pdf" target="_blank" rel="noopener">Open Full Report</a>
+            </div>
+          </article>
+
+          <div class="project-stat-grid" aria-label="Community project summary">
+            <div class="project-stat">
+              <span>Venue</span>
+              <strong>WP/NG Dharmashoka Maha Vidyalaya</strong>
+            </div>
+            <div class="project-stat">
+              <span>Date</span>
+              <strong>April 7, 2026</strong>
+            </div>
+            <div class="project-stat">
+              <span>Participants</span>
+              <strong>25 Students</strong>
+            </div>
+            <div class="project-stat">
+              <span>Mobile Lab</span>
+              <strong>12 Laptops</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-detail-grid">
+          <article class="project-panel">
+            <p class="project-label">Why This Project Mattered</p>
+            <h3>Addressing the Digital Divide</h3>
+            <ul>
+              <li>The school's IT laboratory had only one functioning desktop computer.</li>
+              <li>Many participants did not own a PC or laptop at home.</li>
+              <li>The workshop gave students practical exposure to HTML, CSS, VS Code, and basic security concepts.</li>
+              <li>Printed tutorials and curated self-learning links were provided for continued learning after the event.</li>
+            </ul>
+          </article>
+
+          <article class="project-panel">
+            <p class="project-label">My Contribution</p>
+            <h3>S.G. Kavishka - Group 13</h3>
+            <ul>
+              <li>Supported the workshop as a teaching assistant.</li>
+              <li>Helped decorate and prepare the learning environment.</li>
+              <li>Helped set up student workstations for the mobile lab model.</li>
+              <li>Worked with the team to guide students during hands-on coding activities.</li>
+            </ul>
+          </article>
+
+          <article class="project-panel">
+            <p class="project-label">Budget and Donations</p>
+            <h3>Resource Management</h3>
+            <ul>
+              <li>Each team member contributed LKR 1,500.</li>
+              <li>The initial planned budget was LKR 19,800.</li>
+              <li>The actual project expenditure was LKR 18,555.</li>
+              <li>Donation items included A4 paper packs, color pen sets, glue bottles, stapler pins, whiteboard markers, and pens.</li>
+            </ul>
+          </article>
+
+          <article class="project-panel">
+            <p class="project-label">Reflection</p>
+            <h3>Professional Skills Applied</h3>
+            <p>
+              This project helped me apply teamwork, communication, planning,
+              time management, and responsibility in a real community setting.
+              It also showed me how technical knowledge can become more valuable
+              when it is shared in a simple and supportive way.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="reflection" class="section final-reflection" aria-labelledby="reflection-title">
+        <div class="section-heading">
+          <p class="eyebrow">Overall Reflection</p>
+          <h2 id="reflection-title">How This Module Supports My Professional Growth</h2>
+        </div>
+        <p>
+          The Professional Skills module helped me connect my technical learning
+          with the workplace behaviors expected from a software engineering
+          student. My CV shows my current skills and projects, while the lecture
+          reflections show the professional habits I need to keep improving:
+          communication, emotional intelligence, ethical judgment, grooming,
+          etiquette, negotiation, and continuous portfolio development.
+        </p>
+      </section>
+
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="eyebrow">Final Checkpoint</p>
+          <h2 id="contact-title">Contact</h2>
+          <p>
+            My contact details are placed at the bottom of the portfolio for a
+            clean CV-first flow and a clear closing section.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:sgayankavishka@gmail.com">
+            <span>Email</span>
+            <strong>sgayankavishka@gmail.com</strong>
+          </a>
+          <a class="contact-card" href="tel:+94764910671">
+            <span>Phone</span>
+            <strong>+94 76 491 0671</strong>
+          </a>
+          <div class="contact-card">
+            <span>Location</span>
+            <strong>Malabe, Sri Lanka</strong>
+          </div>
+          <a class="contact-card" href="https://github.com/SGKavishka">
+            <span>GitHub</span>
+            <strong>github.com/SGKavishka</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Professional Skills Portfolio - Gayan Kavishka Senarathna</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

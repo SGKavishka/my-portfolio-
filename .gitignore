@@ -1,0 +1,10 @@
+.DS_Store
+*.log
+
+# Local coursework/source materials not required to serve the portfolio site.
+LEC slides/
+Gayan_Kavishka_CV.docx
+
+# Editor and assistant workspace metadata.
+.agents/
+.codex/
